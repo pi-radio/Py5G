@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "py5g"
+version = "0.1.0"
+description = ""
+authors = ["Michael Zappe <zapman@pi-rad.io>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.0.0"
+numpy = "^1.24"
+
+[tool.poetry.scripts]
+5gcalc = "py5g.calc:calc"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
